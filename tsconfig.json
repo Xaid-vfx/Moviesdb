@@ -5,6 +5,8 @@
       "dom.iterable",
       "esnext"
     ],
+    "target": "ES5",
+    "sourceMap": true,
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
