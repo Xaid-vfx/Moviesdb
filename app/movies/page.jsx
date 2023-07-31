@@ -34,8 +34,8 @@ export default function Movies() {
     <button className='my-4 px-2 py-1 border hover:cursor-pointer'>Sign out</button>
       <div className='grid grid-cols-4 gap-5'>
         {
-          [...new Array(20)].map( ()=>{
-            return <SkeletonCard/>
+          [...new Array(20)].map(e =>{
+            return <SkeletonCard key = {e}/>
           })  
          }
       </div>
