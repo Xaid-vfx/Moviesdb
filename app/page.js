@@ -14,8 +14,8 @@ export default function Home() {
       <div className="flex flex-col items-center">
         <Image
           src={gradient}
-          width={800}
-          height={500}
+          width={785}
+          height={540}
           alt='gradient'
           className='gradient -z-10'
         />

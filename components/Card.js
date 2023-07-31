@@ -9,8 +9,8 @@ export default function Card(props) {
         loading='lazy'
          src={'https://image.tmdb.org/t/p/original' + props.image} 
          alt='mountain' 
-         height={200} 
-         width={300}/>
+         height={800} 
+         width={533}/>
       </div>
       <div className='p-3'>
         <div className='flex justify-between gap-2'>
