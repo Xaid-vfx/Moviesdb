@@ -1,3 +1,101 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes blink {
+    15%{
+        opacity: 0;
+    }
+   
+    90%{
+        opacity: 1;
+    }
+    
+    
+}
+.gradient{
+    position: absolute;
+    top: 2%;
+    height: 500px;
+    width: 700px;
+    z-index: 1;
+    animation: blink 1s linear ;
+}
+.text1{
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(-20px);
+}
+.text1.show{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.text2{
+    font-family: Playfair Display; 
+    font-style: italic;
+    transform: translateY(20px);
+    transition: all 1s;
+    opacity: 0;
+}
+.text2.show{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.description{
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 300;
+    opacity: 0;
+    transition: all 1s;
+}
+.description.show{
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 300;
+    opacity: 1;
+}
+.header{
+    z-index: 10;
+}
+@media (max-width:600px) {
+    .gradient{
+        top: 8%;
+        height: 300px;
+        width: 900px;
+    }
+    .text2{
+        font-size: smaller;
+    }
+    .text1{
+        font-size: smaller;
+    }
+    .title{
+        font-size: x-small;
+    }
+    .description{
+        font-size: small;
+    }
+    .subheader{
+        display: none;
+    }
+    .header{
+        margin: 0;
+    }
+}
+.button{
+    border-radius: 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.24);
+    background: #64AE9D;
+    box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.48) inset, 0px -2px 2px 0px rgba(0, 0, 0, 0.48) inset;
+    font-weight: 600;
+}
+.button:hover{
+    background: #70a799;
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.48) inset, 0px -2px 2px 0px rgba(0, 0, 0, 0.48) inset;
+}
+.button2{
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    background: rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.48) inset, 0px -2px 2px 0px rgba(0, 0, 0, 0.48) inset;
+    backdrop-filter: blur(6px); 
+    font-weight: 600;
+}

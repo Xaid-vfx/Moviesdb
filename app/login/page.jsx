@@ -2,12 +2,12 @@ import React from 'react'
 import Login from '../../components/login'
 
 export const metadata = {
-  title : 'Login',
+  title: 'Login',
   description: 'Login to Explore the most latest and popular movies and TV shows',
   alternates: {
     canonical: '/',
     languagues: {
-      'en-US' : 'en-US'
+      'en-US': 'en-US'
     }
   }
 }
@@ -15,7 +15,7 @@ export const metadata = {
 export default function LoginPage() {
   return (
     <div>
-      <Login/>
+      <Login />
     </div>
   )
 }

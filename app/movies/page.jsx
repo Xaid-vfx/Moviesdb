@@ -16,6 +16,7 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import Header from '../../components/Header.js';
 
 export default function Movies() {
   const supabase = createClientComponentClient();
@@ -62,7 +63,7 @@ export default function Movies() {
       <div className='grid grid-cols-4 gap-5'>
         {data.length > 0 ?
           data.map(e => {
-            return <Card key={e.id} name={e.name} image={e.poster_path} desc={e.overview} />
+            return <Card key={e.id} name={e.name} image={e.poster_path} desc={e.overview} vote={e.vote_average}/>
           }) : 'no'}
       </div>
     </div>

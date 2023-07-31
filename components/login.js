@@ -13,11 +13,12 @@ export default function Login() {
   const supabase = createClientComponentClient();
 
   const handleSignUp = async () => {
+    console.log(location.origin);
     await supabase.auth.signUp({
       email: email,
       password: password,
       options: {
-        emailRedirectTo: `${location.origin}/auth/callback`,
+        emailRedirectTo: `${location.origin}/login`,
       },
     }).then(res => {console.log(res)} );
     router.refresh();
@@ -38,6 +39,7 @@ export default function Login() {
 
   return (
       <div className="bg-black flex flex-col items-center justify-center h-[100vh] text-white">
+        
         <input onChange={(e)=>{
           setemail(e.target.value)
         }} placeholder="Email" type = "email" className="my-2 py-2 px-3 rounded-xl text-black" />
