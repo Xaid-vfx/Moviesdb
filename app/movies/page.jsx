@@ -18,7 +18,7 @@ import {
 } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
-export default function movies() {
+export default function Movies() {
   const supabase = createClientComponentClient();
   const router = useRouter();
   const [movies, setMovies] = useState([])
