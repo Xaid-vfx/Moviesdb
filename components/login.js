@@ -53,7 +53,7 @@ export default function Login() {
           :
           <div className="flex flex-col">
             <button className='mt-2  bg-[#64AE9D] text-black py-1 px-3 text-sm rounded-xl' onClick={handleSignUp}>Sign up</button>
-            <p className="text-xs mt-3 italic">Don't have an account? <span onClick={()=>{setbutton("login")}} className="text-slate-300 underline hover:cursor-pointer">Sign in</span></p>
+            <p className="text-xs mt-3 italic">Dont have an account? <span onClick={()=>{setbutton("login")}} className="text-slate-300 underline hover:cursor-pointer">Sign in</span></p>
           </div>
         }  
       </div>

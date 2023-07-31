@@ -35,8 +35,8 @@ export default function Movies() {
     <button className='my-4 px-2 py-1 border hover:cursor-pointer'>Sign out</button>
       <div className='grid grid-cols-4 gap-5'>
         {
-          [...new Array(20)].map(()=>{
-            return <SkeletonCard/>
+          [...new Array(20)].map((e)=>{
+            return <SkeletonCard key={e.id}/>
           })  
          }
       </div>
@@ -63,7 +63,7 @@ export default function Movies() {
       <div className='grid grid-cols-4 gap-5'>
         {data.length > 0 ?
           data.map(e => {
-            return <Card name={e.name} image={e.poster_path} desc={e.overview} />
+            return <Card key={e.id} name={e.name} image={e.poster_path} desc={e.overview} />
           }) : 'no'}
       </div>
     </div>
