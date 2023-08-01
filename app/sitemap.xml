@@ -1,16 +1,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://xaid-vfx.github.io/Moviesdb/</loc>
+    <loc>https://moviesdb-zqxj.vercel.app/</loc>
     <lastmod>2023-04-06T15:02:24.021Z</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://xaid-vfx.github.io/Moviesdb/login</loc>
+    <loc>https://moviesdb-zqxj.vercel.app/login</loc>
     <lastmod>2023-04-06T15:02:24.021Z</lastmod>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://xaid-vfx.github.io/Moviesdb/movies</loc>
+    <loc>https://moviesdb-zqxj.vercel.app/movies</loc>
     <lastmod>2023-04-06T15:02:24.021Z</lastmod>
     <priority>0.90</priority>
   </url>
