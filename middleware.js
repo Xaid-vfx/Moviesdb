@@ -9,7 +9,6 @@ export async function middleware(req) {
     data: { user },
   } = await supabase.auth.getUser()
 
-    
   if (user && (req.nextUrl.pathname === '/' || req.nextUrl.pathname === '/login')) {
     return NextResponse.redirect(new URL('/movies', req.url))
   }
@@ -17,10 +16,9 @@ export async function middleware(req) {
   if (!user && req.nextUrl.pathname === '/movies') {
     return NextResponse.redirect(new URL('/', req.url))
   }
-
   return res
 }
 
 export const config = {
-  matcher: ['/', '/login' , '/movies'],
+  matcher: ['/', '/login' ,'/movies'],
 }

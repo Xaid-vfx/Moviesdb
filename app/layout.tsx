@@ -10,7 +10,8 @@ export const metadata = {
     default: "MoviesDb",
     template: "%s | MoviesDb"
   },
-  description: 'Explore the most latest and popular movies and TV shows'
+  description: 'Explore the most latest and popular movies and TV shows',
+  category: 'technology'
 }
 
 export default function RootLayout({ children }: {children: React.ReactNode}) {
