@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Card(props) {
   return (
-    <div className='p-10 hover:scale-105 transition-all'>
+    <div className='p-10 hover:scale-105 transition-all Card'>
       <div className='rounded-lg w-[100%] h-[300px]  overflow-hidden flex items-center'>
         <Image 
         loading='lazy'
@@ -17,7 +17,7 @@ export default function Card(props) {
         <div className='text-base my-2'>{props.name}</div>
         <div className='text-base my-2 text-[#64AE9D]'>{props.vote}</div>
         </div>
-        <div className='text-xs text-slate-300'>{props.desc.length > 150 ? props.desc.substring(0, 100) + '...' : props.desc}</div>
+        <div className='text-xs text-slate-300 Cardtxt'>{props.desc.length > 150 ? props.desc.substring(0, 100) + '...' : props.desc}</div>
       </div>
     </div>
   )

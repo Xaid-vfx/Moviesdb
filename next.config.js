@@ -5,7 +5,6 @@ const nextConfig = {
           'image.tmdb.org',
         ],
       },  
-      output: 'export'
 }
 
 module.exports = nextConfig
