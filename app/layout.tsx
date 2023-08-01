@@ -21,7 +21,6 @@ export default function RootLayout({ children }: {children: React.ReactNode}) {
         <body className={`${inter.className} bg-black`}>
           {children}
         </body>
-        <ReactQueryDevtools initialIsOpen={false} />
       </html>
       
     </Providers>

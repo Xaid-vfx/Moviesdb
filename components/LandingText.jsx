@@ -11,7 +11,6 @@ export default function LandingText() {
             setTimeout(() => {
                 const data3 = ''
                 document.getElementsByClassName('description')[0].classList.toggle('show', true)
-                // document.getElementById('foot2').classList.toggle('show', true)
             }, 1500);
         }, 1000);
     }, [])
