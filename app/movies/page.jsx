@@ -58,9 +58,9 @@ export default function Movies() {
 
   return (
 
-    <div className='text-white p-16'>
+    <div className='text-white p-16 CardCont'>
       <button className='my-4 px-2 py-1 border hover:cursor-pointer' onClick={handleSignOut}>Sign out</button>
-      <div className='grid grid-cols-4 gap-5'>
+      <div className='grid grid-cols-4 gap-5 Cards'>
         {data.length > 0 ?
           data.map(e => {
             return <Card key={e.id} name={e.name} image={e.poster_path} desc={e.overview} vote={e.vote_average}/>
